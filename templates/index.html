@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Study Planner</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="brand">
+        <div class="logo">✦</div>
+        <div>
+            <h2>Study Planner</h2>
+            <small>SMART LEARNING SPACE</small>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="avatar">S</div>
+        <div>
+            <b>My Study Space</b>
+            <small>Stay focused!</small>
+        </div>
+    </div>
+
+    <p class="menu-label">MENU UTAMA</p>
+
+    <button class="nav active" data-page="dashboard">
+        ▦ Dashboard
+    </button>
+
+    <button class="nav" data-page="tasks">
+        ☑ My Tasks
+    </button>
+
+    <button class="nav" data-page="calendar">
+        ▦ Calendar
+    </button>
+
+    <button class="nav" data-page="schedule">
+        ◷ Study Schedule
+    </button>
+
+    <button class="nav" data-page="notes">
+        ▤ Study Notes
+    </button>
+
+    <button class="nav" data-page="subjects">
+        ▣ Subjects
+    </button>
+
+    <button class="nav" data-page="progress">
+        ◔ Progress
+    </button>
+
+    <button id="themeToggle" class="theme">
+        ☾ Dark Mode
+    </button>
+
+</div>
+
+
+<main class="main">
+
+    <header class="header">
+
+        <div>
+            <small>YOUR LEARNING OVERVIEW</small>
+
+            <h1 id="pageTitle">
+                Good morning! ✦
+            </h1>
+
+            <p>
+                Let's make today productive.
+            </p>
+        </div>
+
+        <button class="add-button" id="addTask">
+            + Add New Task
+        </button>
+
+    </header>
+
+
+    <section id="content">
+
+        <div class="loading">
+            Loading dashboard...
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
